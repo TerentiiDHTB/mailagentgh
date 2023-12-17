@@ -1,0 +1,44 @@
+@use "@/shared/styles/valuelibrary";
+
+.headerWrapper{
+  width: auto;
+  height: 5vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .logoImg{
+    width: 5vh;
+    height: 5vh;
+
+    margin-right: 0.5vw;
+  }
+
+  .userInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: auto;
+
+    .userName{
+      text-decoration: none;
+      font-family: MullerRegular, serif;
+      color: black;
+
+      &:hover{
+        color: valuelibrary.$interaction_color;
+        border-bottom: 1px solid valuelibrary.$interaction_color;
+      }
+  }
+
+    .userImg{
+      margin-left: 1vw;
+      border-radius: 10px;
+
+      width:5vh;
+      height: 5vh;
+    }
+  }
+}
